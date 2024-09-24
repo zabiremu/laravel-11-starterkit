@@ -27,8 +27,7 @@
         </form>
 
         <hr class="my-8" />
-        @include('admin.components.button', ['label' => 'Github'])
-        @include('admin.components.button', ['label' => 'Twitter'])
+
 
 
         @include('admin.components.forgetPassword', [

@@ -44,10 +44,8 @@
             @include('admin.components.submitButton', ['label' => 'Register'])
         </form>
 
-        <hr class="my-8" />
 
-        @include('admin.components.button', ['label' => 'Github'])
 
-        @include('admin.components.button', ['label' => 'Twitter'])
+
     </div>
 @endsection

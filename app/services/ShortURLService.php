@@ -8,8 +8,8 @@ class ShortURLService
 {
     public function generateShortURL($longURL)
     {
-
-        $shortURLObject = app(Builder::class)->destinationUrl($longURL)->make();
+        $randomKey = date('His');
+        $shortURLObject = app(Builder::class)->destinationUrl($longURL)->urlKey($randomKey)->make();
         $shortURL = $shortURLObject->default_short_url;
         return $shortURL;
     }
